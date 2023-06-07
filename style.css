@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img, picture {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    padding: 3% 3%;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#note-container {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#title-container {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#story-container {
+    width: 100%;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+#stats-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-item-container {
+    margin-bottom: 30px;
+}
+
+.stat-number,
+.stat-name {
+    text-align: center;
+}
+
+.stat-number {
+    margin-bottom: 3px;
+}
+
+#image-container {
+    order: 1; 
+}
+
+body {
+    /* font-family: 'Inter', sans-serif;  400 700 */ 
+    /* font-family: 'Lexend Deca', sans-serif; 400 */
+}
+
+#note-container {
+    background-color: #1b1938;
+}
+
+#title-container {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffff;
+}
+
+#story-container {
+    font-family: 'Lexend Deca', sans-serif; 
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffff;
+    opacity: 0.6;
+}
+
+
+.stat-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffff;
+}
+
+.stat-name {
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase; 
+    font-size: 11px;
+    font-weight: 400;
+    color: #ffff;
+    opacity: 0.75;
+    letter-spacing: 2px;
+}
+
+
+
+  
+
+
+
+@media (min-width: 576px) {
+    #main-container { 
+        flex-direction: row;
+    }
+
+    #note-container {
+        order: 1;
+        flex-basis: 50%;
+        align-items: flex-start;
+        padding-left: 5%;
+        padding-right: 10%;
+    }
+  
+    .note-item {
+        width: 100%;
+    }
+
+    #title-container {
+        margin-top: 45px;
+        margin-bottom: 30px;
+        text-align: start;
+    }
+    
+    #story-container {
+        margin-bottom: 50px;
+        text-align: start;
+    }
+
+    #stats-container {
+        margin-bottom: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .stat-number {
+        text-align: start;
+    }
+ 
+    #image-container {
+        order: 2;
+        flex-basis: 50%;
+    }
+}
